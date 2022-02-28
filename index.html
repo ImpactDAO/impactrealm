@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="themes/styles/styles.css">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/aef6e64cd1.js" crossorigin="anonymous"></script>
+
+    <!-- Ion Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+    <title>Converging Metaverse | Impact Realm</title>
+</head>
+
+<body>
+
+    <section class="header-section">
+
+        <!-- Navbar -->
+        <header class="navbar-section">
+
+            <!-- Navbar Logo -->
+            <img class="logo-image" src="themes/images/logo.png" alt="">
+
+
+            <!-- Navbar Links -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Whitelist</a></li>
+                    <li><a href="#">Whitepaper</a></li>
+
+                </ul>
+            </nav>
+            <a href="#"><button class="shadow-drop-br nav-button">Connect</button></a>
+
+            <!-- Hamburger Menu -->
+            <input type="checkbox" name="" id="check" onclick="hamburgerMenu()">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars" id="open"></i>
+                <i class="fa fa-times" id="close"></i>
+            </label>
+
+        </header>
+
+
+
+        <div class="overlay-1"></div>
+
+
+        <!-- Hamburger Links -->
+        <nav class="hamburger-links">
+            <ul id="hamburger-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Whitelist</a></li>
+                <li><a href="#">Whitepaper</a></li>
+                <li><a href="#"><button class="shadow-drop-br hamburger-button"
+                            id="hamburger-button">Connect</button></a></li>
+            </ul>
+        </nav>
+
+
+        <i class="fa fa-arrow-down" id="arrow-down"></i>
+    </section>
+
+    <!-- <section class="intro">
+        <h2>Welcome to Guild Capital!</h2>
+        <div class="intro-container">
+            <div class="intro-1">
+                <h1> A METAVERSE PORTAL
+                    TO CONNECT
+                    GAMERS TO GUILDS & GAMES</h1>
+            </div>
+            <div class="intro-2">
+                <h1>INTEGRATED WITH
+                    GAMEPLAY ELEMENTS</h1>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="game-features">
+        <div class="game-features-content">
+            <h1 class="sides border">Game Features</h1>
+            <nav>
+                <ul class="game-features-links">
+                    <li>
+                        <a class="active-link" id="gameplay-link" onclick="gameplayFeatures()">Gameplay</a>
+                    </li>
+                    <li><a id="world-link" onclick="worldFeatures()">World</a></li>
+                    <li><a id="avatar-link" onclick="avatarFeatures()">Avatar</a></li>
+                    <li><a id="nft-link" onclick="nftFeatures()">NFT</a></li>
+                </ul>
+            </nav>
+            <div class="game-features-desc">
+
+                <!-- Gameplay Section -->
+                <div class="gameplay-section" id="gameplay-section">
+                    <div class="card">
+                        <img src="https://embersword.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbadge-browser-rpg.a1659a97.svg&w=1920&q=75"
+                            alt="Avatar" style="width:50%">
+                        <div class="container">
+                            <h2><b>SANDBOX MMORPG</b></h2>
+                            <p>In Ember Sword, what you do and when is entirely up to you! Being mechanically strong &
+                                knowledgable will net you many victories on the moon of Thanabus.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://embersword.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbadge-boss.d9950e34.svg&w=1920&q=75"
+                            alt="Avatar" style="width:50%">
+                        <div class="container">
+                            <h2><b>END-GAME CONTENT</b></h2>
+                            <p>Ember Sword is built around the philosophy of "gameplay first" and will feature
+                                challenging end-game PVE, hardcore PvP, a living economy, and much more!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://embersword.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbadge-book.bd349a4e.svg&w=1920&q=75"
+                            alt="Avatar" style="width:50%">
+                        <div class="container">
+                            <h2><b>IMMERSIVE STORYLINE</b></h2>
+                            <p>Thanabus has a deep story to be told. You'll face tough challenges, meet ruthless
+                                characters, and make new friends when you set foot on this moon.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://embersword.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbadge-anvil.8b412743.svg&w=1920&q=75"
+                            alt="Avatar" style="width:50%">
+                        <div class="container">
+                            <h2><b>PROFESSIONS AND SKILLS</b></h2>
+                            <p>Progression in Ember Sword is based on advancing your skills from level 0 to 100. Each
+                                weapon type has its own associated skill and so do other RPG elements like crafting.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- World Section -->
+                <div class="world-section" id="world-section">
+                    <div class="card">
+                        <img src="https://embersword.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbadge-banner.ad81579e.svg&w=1920&q=75"
+                            alt="Avatar" style="width:50%">
+                        <div class="container">
+                            <h2><b>TERRITORIES AND LANDS</b></h2>
+                            <p>The moon of Thanabus is split into four nations. Each nation has three types of
+                                territories, each posing a different challenge: Kingship, Wilderness, and Outlaw.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://embersword.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbadge-trophy.e8acc70e.svg&w=1920&q=75"
+                            alt="Avatar" style="width:50%">
+                        <div class="container">
+                            <h2><b>CARAVAN TRADING</b></h2>
+                            <p>Acquire valuable resources unique to your home region, and sell them by launching a
+                                caravan across the dangerous Outlaw Territories. Be Careful with the wagon!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://embersword.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbadge-key.a7220205.svg&w=1920&q=75"
+                            alt="Avatar" style="width:50%">
+                        <div class="container">
+                            <h2><b>LAND OWNERSHIP</b></h2>
+                            <p>The first land sale of Ember Sword takes place in Solarwood - one of the four nations of
+                                Thanabus. The sale features four types of land: regular plots, settlements, and towns.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://embersword.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbadge-hooded-figure.651403d8.svg&w=1920&q=75"
+                            alt="Avatar" style="width:50%">
+                        <div class="container">
+                            <h2><b>ARTIFICIAL GAMEMASTER</b></h2>
+                            <p>In Ember Sword, the world is alive and populated with real players. The AI gamemaster
+                                utilizes the players around you to build new experiences every time you play.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Avatar Section -->
+                <div class="avatar-section" id="avatar-section">
+                    <h1>Coming Soon...</h1>
+                </div>
+
+                <!-- NFT Section -->
+                <div class="nft-section" id="nft-section">
+                    <h1>Coming Soon...</h1>
+                </div>
+
+            </div>
+    </section>
+
+    <section class="land-types-section">
+        <div class="overlay-2 land-types">
+            <div class="land-types-text">
+                <h1 class="">Land Types</h1>
+                <nav>
+                    <ul class="land-types-links">
+                        <li>
+                            <a id="federal-link" class="active-link" onclick="federalLink()">Federal Territory</a>
+                        </li>
+                        <li><a id="urban-prime-link" onclick="urbanPrimeLink()">Urban Prime</a></li>
+                        <li><a id="urban-link" onclick="urbanLink()">Urban</a></li>
+                        <li><a id="outskirt-link" onclick="outskirtLink()">Outskirt</a></li>
+                        <li><a id="island-link" onclick="islandLink()">Island</a></li>
+                    </ul>
+                </nav>
+                <div class="land-types-title">
+                    <h2 id="land-title">Federal Territory</h2>
+                    <p id="land-desc">The foundation of land in Ember Sword revolves around square 1x1 plots that are,
+                        roughly, the
+                        size of one screen. Regular plots are the base form of land in the game, your chance to own a
+                        piece of Thanabus. Regular plots come with the Sir/Lady title and have traits that are unveiled
+                        as the game world unfolds, which can include campsites, NPC houses, resource deposits, monster
+                        spawns and more!</p>
+                </div>
+                <img id="land-image"
+                    src="https://embersword.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbuilding-regular-plot.a56c2cba.png&w=1920&q=75"
+                    alt="">
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="roadmap-section">
+        <h1 class="sides border">Roadmap</h1>
+        <div class="roadmap-container">
+            <div class="timeline">
+                <ul>
+                    <li>
+                        <div class="timeline-content">
+                            <h1>Roadmap #1</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit recusandae eligendi
+                                nobis! Id voluptatem, numquam aspernatur consectetur minima repudiandae, cupiditate
+                                maxime ea assumenda quo commodi dolor voluptate odit sapiente saepe?</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h1>Roadmap #2</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit recusandae eligendi
+                                nobis! Id voluptatem, numquam aspernatur consectetur minima repudiandae, cupiditate
+                                maxime ea assumenda quo commodi dolor voluptate odit sapiente saepe?</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h1>Roadmap #3</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit recusandae eligendi
+                                nobis! Id voluptatem, numquam aspernatur consectetur minima repudiandae, cupiditate
+                                maxime ea assumenda quo commodi dolor voluptate odit sapiente saepe?</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h1>Roadmap #4</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit recusandae eligendi
+                                nobis! Id voluptatem, numquam aspernatur consectetur minima repudiandae, cupiditate
+                                maxime ea assumenda quo commodi dolor voluptate odit sapiente saepe?</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-info-section">
+        <h1 class="team-info-title">Our Team</h1>
+        <div class="team-row">
+            <div class="member">
+                <img src="themes/images/team/gavin.png" alt="">
+                <h2>Gavin Li</h2>
+                <p>Founder & CEO</p>
+            </div>
+            <div class="member">
+                <img src="themes/images/team/darren.png" alt="">
+                <h2>Darren Cheong</h2>
+                <p>CFO</p>
+            </div>
+            <div class="member">
+                <img src="themes/images/team/ujin.png" alt="">
+                <h2>Lum Ujin</h2>
+                <p>Operation & Partnerships Lead</p>
+            </div>
+            <div class="member">
+                <img src="themes/images/team/antonio.png" alt="">
+                <h2>Antonio Molina</h2>
+                <p>Game Dev Lead</p>
+            </div>
+            <div class="member">
+                <img src="themes/images/team/raphael.png" alt="">
+                <h2>Raphael Alexis</h2>
+                <p>Game Designer</p>
+            </div>
+            <div class="member">
+                <img src="themes/images/team/james.png" alt="">
+                <h2>James Neilson</h2>
+                <p>Business Development</p>
+            </div>
+            <div class="member">
+                <img src="themes/images/team/thiago.png" alt="">
+                <h2>Thiago C.</h2>
+                <p>Blockchain Lead</p>
+            </div>
+            <div class="member">
+                <img src="themes/images/team/david.png" alt="">
+                <h2>David Mccann</h2>
+                <p>Behavioural Data Scientist</p>
+            </div>
+            <div class="member">
+                <img src="themes/images/team/gitti.png" alt="">
+                <h2>Gitti Ekchan</h2>
+                <p>Senior Game Dev</p>
+            </div>
+            <div class="member">
+                <img src="themes/images/team/wing.png" alt="">
+                <h2>Wing Yee</h2>
+                <p>Community Lead</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="game-info">
+        <div class="game-info-container">
+            <div class="game-info-title">
+                <!-- <h2>Welcome to Guild Capital!</h2> -->
+                <h1>IT'S TIME TO CONNECT TO METAVERSE PORTAL!</h1>
+                <a href="https://impactrealm.io/register"><button class="shadow-drop-br nav-button">Enter Guild
+                        Capital</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section ">
+        <div class="faq-container">
+            <h1>FAQs</h1>
+            <div class="accordion">
+                <div class="accordion-item" id="question-1">
+                    <a class="accordion-link" href="#question-1">
+                        What is Guild Capital?
+                        <ion-icon class="add-outline" name="add-outline"></ion-icon class="">
+                        <ion-icon class="remove-outline" name="remove-outline"></ion-icon class="">
+                    </a>
+                    <div class="answer">
+                        <p>Placeholder</p>
+                    </div>
+                </div>
+                <div class="accordion-item" id="question-2">
+                    <a class="accordion-link" href="#question-2">
+                        How many lands will be available?
+                        <ion-icon class="add-outline" name="add-outline"></ion-icon class="">
+                        <ion-icon class="remove-outline" name="remove-outline"></ion-icon class="">
+                    </a>
+                    <div class="answer">
+                        <p>Placeholder</p>
+                    </div>
+                </div>
+                <div class="accordion-item" id="question-3">
+                    <a class="accordion-link" href="#question-3">
+                        What is the price of a land?
+                        <ion-icon class="add-outline" name="add-outline"></ion-icon class="">
+                        <ion-icon class="remove-outline" name="remove-outline"></ion-icon class="">
+                    </a>
+                    <div class="answer">
+                        <p>Placeholder</p>
+                    </div>
+                </div>
+                <div class="accordion-item" id="question-4">
+                    <a class="accordion-link" href="#question-4">
+                        What is the benefit of owning a land?
+                        <ion-icon class="add-outline" name="add-outline"></ion-icon class="">
+                        <ion-icon class="remove-outline" name="remove-outline"></ion-icon class="">
+                    </a>
+                    <div class="answer">
+                        <p>Placeholder</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!-- <div class="footer-content">
+            <h3>Contact Us!</h3>
+            <ul class="socials">
+                <li><a href="">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a></li>
+            </ul>
+        </div> -->
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2022 Impact Realm</p>
+        </div>
+    </footer>
+
+
+
+</body>
+
+<script src="themes/js/script.js"></script>
+
+</html>
